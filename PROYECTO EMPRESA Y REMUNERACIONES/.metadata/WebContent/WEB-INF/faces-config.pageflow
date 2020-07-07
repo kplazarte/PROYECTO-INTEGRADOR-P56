@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15939089484320" configfile="/PROYECTO EMPRESA Y REMUNERACIONES/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" id="pf159391337205871" referenceLink="//@navigationRule.13/@navigationCase.0/@toViewId|" outlinks="pf159391337205872" inlinks="pf159391337205873 pf159391337205874 pf159391337205875" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="ingresar.xhtml" id="pf159391337205876" referenceLink="//@navigationRule.12/@navigationCase.0/@toViewId|" outlinks="pf159391337205877 pf159391337205874" inlinks="pf159391337205872 pf159391337205878" path="/ingresar.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" id="pf159391337205879" referenceLink="//@navigationRule.12/@fromViewId|" outlinks="pf159391337205880 pf159391337205881 pf159391337205878" inlinks="pf159391337205877" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="reportes.xhtml" id="pf159391337205882" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf159391337205883" inlinks="pf159391337205880" path="/reportes.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="Mostrar_reportes.xhtml" id="pf159391337205884" referenceLink="//@navigationRule.4/@fromViewId|" outlinks="pf159391337205873" inlinks="pf159391337205883" path="/Mostrar_reportes.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="administrador.xhtml" id="pf159391337205885" referenceLink="//@navigationRule.18/@navigationCase.0/@toViewId|" outlinks="pf159391337205886 pf159391337205887 pf159391337205888 pf159391337205889 pf159391337205890 pf159391337205875" inlinks="pf159391337205881 pf159391337205891 pf159391337205892 pf159391337205893 pf159391337205894 pf159391337205895" path="/administrador.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="registrar_usuario.xhtml" id="pf159391337205896" referenceLink="//@navigationRule.14/@fromViewId|" outlinks="pf159391337205891" inlinks="pf159391337205886" path="/registrar_usuario.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="actualizar_usuario.xhtml" id="pf159391337205897" referenceLink="//@navigationRule.15/@fromViewId|" outlinks="pf159391337205892" inlinks="pf159391337205887" path="/actualizar_usuario.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="consultar_usuario.xhtml" id="pf159391337205898" referenceLink="//@navigationRule.16/@fromViewId|" outlinks="pf159391337205893" inlinks="pf159391337205888" path="/consultar_usuario.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="bloquear_usuario.xhtml" id="pf159391337205899" referenceLink="//@navigationRule.17/@fromViewId|" outlinks="pf159391337205894" inlinks="pf159391337205889" path="/bloquear_usuario.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="registro_actividades.xhtml" id="pf1593913372058100" referenceLink="//@navigationRule.18/@fromViewId|" outlinks="pf159391337205895" inlinks="pf159391337205890" path="/registro_actividades.xhtml"/>
+  <links id="pf159391337205872" target="pf159391337205876" source="pf159391337205871" outcome="IngresarPaginaPrincipal"/>
+  <links id="pf159391337205877" target="pf159391337205879" source="pf159391337205876" outcome="verificarUsuairo"/>
+  <links id="pf159391337205880" target="pf159391337205882" source="pf159391337205879" outcome="ingresoUsuario"/>
+  <links id="pf159391337205883" target="pf159391337205884" source="pf159391337205882" outcome="GenerarReportes"/>
+  <links id="pf159391337205873" target="pf159391337205871" source="pf159391337205884" outcome="CerrarSesion"/>
+  <links id="pf159391337205881" target="pf159391337205885" source="pf159391337205879" outcome="ingresoAdministrador"/>
+  <links id="pf159391337205886" target="pf159391337205896" source="pf159391337205885" outcome="generarNuevoUsuario"/>
+  <links id="pf159391337205887" target="pf159391337205897" source="pf159391337205885" outcome="actualizarContraseña"/>
+  <links id="pf159391337205888" target="pf159391337205898" source="pf159391337205885" outcome="revisarTodosUsuarios"/>
+  <links id="pf159391337205889" target="pf159391337205899" source="pf159391337205885" outcome="BloquearUsuarios"/>
+  <links id="pf159391337205890" target="pf1593913372058100" source="pf159391337205885" outcome="ActividadesRealizadasUsuarios"/>
+  <links id="pf159391337205874" target="pf159391337205871" source="pf159391337205876" outcome="RegresasPaginaPrincipal"/>
+  <links id="pf159391337205878" target="pf159391337205876" source="pf159391337205879" outcome="UsuarioNoEcontrado"/>
+  <links id="pf159391337205875" target="pf159391337205871" source="pf159391337205885" outcome="CerrarSesion"/>
+  <links id="pf159391337205891" target="pf159391337205885" source="pf159391337205896" outcome="Salir"/>
+  <links id="pf159391337205892" target="pf159391337205885" source="pf159391337205897" outcome="Salir"/>
+  <links id="pf159391337205893" target="pf159391337205885" source="pf159391337205898" outcome="Salir"/>
+  <links id="pf159391337205894" target="pf159391337205885" source="pf159391337205899" outcome="Salir"/>
+  <links id="pf159391337205895" target="pf159391337205885" source="pf1593913372058100" outcome="Salir"/>
+</pageflow:Pageflow>
