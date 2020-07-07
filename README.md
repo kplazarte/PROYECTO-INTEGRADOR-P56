@@ -27,4 +27,4 @@ Para instalar el proyecto, utilizaremos los comandos básicos de Git.
 * Daniela Campoverde
 ## 📄 Licencia
 Este proyecto esta bajo la licencia MIT utilizamos esta [licencia](LICENCIA.md) porque es permisiva y simple con condiciones que solo requieren la
-preservacion de los derechos de autor y avisos de licencia
+preservacion de los derechos de autor y avisos de licencia. Esta licencia permite reutilizar el software así licenciado tanto para ser software libre como para ser software no libre, y en nuestro proyecto solo queremos conservar los derechos de autor.
