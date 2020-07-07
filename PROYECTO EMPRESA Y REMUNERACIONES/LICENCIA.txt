@@ -1,4 +1,4 @@
-Derechos de autor de la licencia MIT (c) [año] [nombre completo] 
+Derechos de autor de la licencia MIT (c) [2020] [Kevin Plazarte, Alejandro Marin, Sebastian Paredes, Daniela Campoverde] 
 
 Por la presente, se otorga permiso, sin cargo, a cualquier persona que obtenga una copia 
 de este software y los archivos de documentación asociados (el "Software"), para negociar 
