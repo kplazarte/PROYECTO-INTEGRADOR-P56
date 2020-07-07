@@ -15,4 +15,5 @@ El proyecto estará bajo una licencia de software libre y el código será subid
 * Sebastian Paredes
 * Daniela Campoverde
 ## 📄 Licencia
-Este proyecto esta bajo la licencia MIT utilizamos esta licencia porque es permisiva y simple para preservar los derechos de autor.
+Este proyecto esta bajo la licencia MIT utilizamos esta [licencia](Licencia.md) porque es permisiva y simple con condiciones que solo requieren la
+preservacion de los derechos de autor y avisos de licencia
