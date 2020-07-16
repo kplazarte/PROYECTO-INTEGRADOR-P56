@@ -14,9 +14,13 @@
 	<header id="header">
 	<div class="inner">
 		<h1>
-			<strong>EMPRESAS Y REMUNERACIONES </strong><br /> INTEGRANTES<br />KEVIN
-			PLAZARTE<br />kplazarte@est.ups.edu.ec<br />DANIELA CAMPOVERDE<br />dcampoverdev2@est.ups.edu.ec<br />ALEJANDRO
-			MARIN<br />kmarinm@est.ups.edu.ec<br />SEBASTIAN PAREDES<br />sparedese@est.ups.edu.ec
+			<h:graphicImage value="/images/EMPRESAS.png" width="200px"
+				height="200px" dir="ltr"></h:graphicImage>
+			<br></br> INTEGRANTES<br />KEVIN PLAZARTE<br />kplazarte@est.ups.edu.ec<br />DANIELA
+			CAMPOVERDE<br />dcampoverdev2@est.ups.edu.ec<br />ALEJANDRO MARIN<br />kmarinm@est.ups.edu.ec<br />SEBASTIAN
+			PAREDES<br />sparedese@est.ups.edu.ec<br />
+			
+
 		</h1>
 	</div>
 	</header>
@@ -24,8 +28,6 @@
 
 		<section id="one"> <header class="major"> <h:panelGrid
 			columns="3">
-
-
 
 			<label>Usuario:</label>
 			<h:inputText value="#{persona.usuario}" required="true" id="usuario">
@@ -35,6 +37,7 @@
 			<label>Contraseña:</label>
 			<h:inputText value="#{persona.contraseña}" required="true"
 				id="contraseña">
+			
 			</h:inputText>
 			<h:message for="telefono" style="color:red" />
 			<h:button href="#" value="Ingresar" action="login.xhtml"></h:button>
