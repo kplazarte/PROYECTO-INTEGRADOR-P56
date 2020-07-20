@@ -2,7 +2,9 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
 <h:head>
 	<title>PROYECTO PERIODO 56</title>
 	<meta charset="utf-8" />
@@ -19,32 +21,42 @@
 			<br></br> INTEGRANTES<br />KEVIN PLAZARTE<br />kplazarte@est.ups.edu.ec<br />DANIELA
 			CAMPOVERDE<br />dcampoverdev2@est.ups.edu.ec<br />ALEJANDRO MARIN<br />kmarinm@est.ups.edu.ec<br />SEBASTIAN
 			PAREDES<br />sparedese@est.ups.edu.ec<br />
-			
+
 
 		</h1>
 	</div>
 	</header>
 	<div id="main">
 
+		<h:form>
+		<div id="main">
+
 		<section id="one"> <header class="major"> <h:panelGrid
 			columns="3">
 
 			<label>Usuario:</label>
-			<h:inputText value="#{persona.usuario}" required="true" id="usuario">
+			<h:inputText value="#{persona.usuario}" id="nombre">
+				<f:validateRequired />
 			</h:inputText>
-			<h:message for="usuario" style="color:red" />
+			<h:message for="nombre" style="color:red" />
 
-			<label>Contraseña:</label>
+			<label>Nueva Contraseña:</label>
 			<h:inputText value="#{persona.contraseña}" required="true"
 				id="contraseña">
-			
+				<f:validateRequired />
 			</h:inputText>
-			<h:message for="telefono" style="color:red" />
-			<h:button href="#" value="Ingresar" action="login.xhtml"></h:button>
+			<h:message for="contraseña" style="color:red" />
+
+			
+
 			<br></br>
-			<h:button href="#" value="Registrarse" action="login.xhtml"
-				outcome="login.xhtml"></h:button>
+			<h:commandButton action="#{persona.actualizar}" value="Modificar" />
+			
 		</h:panelGrid> </header> </section>
+	</div>
+
+		</h:form>
+
 	</div>
 </h:body>
 </html>

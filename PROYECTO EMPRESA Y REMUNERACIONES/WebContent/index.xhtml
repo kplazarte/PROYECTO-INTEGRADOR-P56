@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
 <h:head>
 	<title>PROYECTO PERIODO 56</title>
@@ -28,17 +29,17 @@
 	</header>
 
 	<div id="main">
+		<p:breadCrumb>
+			<p:menuitem value="Categories" url="#" />
+
+			<p:menuitem value="Repositorio"
+				url="https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56" />
+			<p:menuitem value="Wiki"
+				url="https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56/wiki" />
+
+		</p:breadCrumb>
 		<section id="one"> <header class="major"> <header>
-		<nav>
-		<ul>
-			<li><a
-				href="https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56"><span
-					class="icon-suitcase" action=""></span>Repositorio</a></li>
-			<li><a
-				href="https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56/wiki"><span
-					class="icon-rocket"></span>Wiki</a></li>
-		</ul>
-		</nav> </header>
+		 </header>
 		<h2>Nuestro programa permite a los usuarios realizar una serie de
 			reportes mediante filtros sobre las empresas en el Ecuador
 			clasificadas por el tipo de actividad que realizan</h2>
