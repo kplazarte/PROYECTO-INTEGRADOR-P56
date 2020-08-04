@@ -2,7 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:ui="http://java.sun.com/jsf/facelets"
 	xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
 
 <h:head>
 	<title>PROYECTO PERIODO 56</title>
@@ -10,22 +11,35 @@
 	<meta name="viewport"
 		content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/estilos.css" />
 </h:head>
 <h:body class="is-preload">
-
 	<header id="header">
 	<div class="inner">
 		<h1>
-			<strong>EMPRESAS Y REMUNERACIONES </strong><br /> INTEGRANTES<br />KEVIN
-			PLAZARTE<br />kplazarte@est.ups.edu.ec<br />DANIELA CAMPOVERDE<br />dcampoverdev2@est.ups.edu.ec<br />ALEJANDRO
-			MARIN<br />kmarinm@est.ups.edu.ec<br />SEBASTIAN PAREDES<br />sparedese@est.ups.edu.ec
+			<h:graphicImage value="/images/EMPRESAS.png" width="200px"
+				height="200px" dir="ltr"></h:graphicImage>
+			<br></br> INTEGRANTES<br />KEVIN PLAZARTE<br />kplazarte@est.ups.edu.ec<br />DANIELA
+			CAMPOVERDE<br />dcampoverdev2@est.ups.edu.ec<br />ALEJANDRO MARIN<br />kmarinm@est.ups.edu.ec<br />SEBASTIAN
+			PAREDES<br />sparedese@est.ups.edu.ec<br />
+
+
 		</h1>
 	</div>
 	</header>
 
 	<div id="main">
+		<p:breadCrumb>
+			<p:menuitem value="Categories" url="#" />
 
-		<section id="one"> <header class="major">
+			<p:menuitem value="Repositorio"
+				url="https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56" />
+			<p:menuitem value="Wiki"
+				url="https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56/wiki" />
+
+		</p:breadCrumb>
+		<section id="one"> <header class="major"> <header>
+		 </header>
 		<h2>Nuestro programa permite a los usuarios realizar una serie de
 			reportes mediante filtros sobre las empresas en el Ecuador
 			clasificadas por el tipo de actividad que realizan</h2>
@@ -69,11 +83,7 @@
 						action="ingresar.xhtml" outcome="ingresar.xhtml"></h:button></a></li>
 		</ul>
 		</section>
-		<section>
-		<h2>REPOSITORIO</h2>
-		<h:outputLink
-			value="https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56">https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56</h:outputLink>
-		</section>
+		<section> </section>
 
 	</div>
 

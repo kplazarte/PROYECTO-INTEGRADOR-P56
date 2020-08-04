@@ -1,9 +1,61 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:ui="http://java.sun.com/jsf/facelets"
-      xmlns:f="http://java.sun.com/jsf/core"
-      xmlns:h="http://java.sun.com/jsf/html">
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
 
-	<ui:composition template="">
-	</ui:composition>
+<h:head>
+	<title>PROYECTO PERIODO 56</title>
+	<meta charset="utf-8" />
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</h:head>
+<h:body class="is-preload">
+	<header id="header">
+	<div class="inner">
+		<h1>
+			<h:graphicImage value="/images/EMPRESAS.png" width="200px"
+				height="200px" dir="ltr"></h:graphicImage>
+			<br></br> INTEGRANTES<br />KEVIN PLAZARTE<br />kplazarte@est.ups.edu.ec<br />DANIELA
+			CAMPOVERDE<br />dcampoverdev2@est.ups.edu.ec<br />ALEJANDRO MARIN<br />kmarinm@est.ups.edu.ec<br />SEBASTIAN
+			PAREDES<br />sparedese@est.ups.edu.ec<br />
+
+
+		</h1>
+	</div>
+	</header>
+	<div id="main">
+
+		<h:form>
+			<div id="main">
+
+				<section id="one"> <header class="major"> <h:panelGrid
+					columns="3">
+
+					<label>Usuario:</label>
+					<h:inputText value="#{persona.usuario}" id="nombre">
+						<f:validateRequired />
+					</h:inputText>
+					<h:message for="nombre" style="color:red" />
+
+					<label>Nueva Contraseña:</label>
+					<h:inputText value="#{persona.contraseña}" required="true"
+						id="direccion">
+						<f:validateRequired />
+					</h:inputText>
+
+					<h:message for="contrase" style="color:red" />
+
+
+					<br></br>
+					<h:commandButton action="#{persona.registrar}" value="Ingresar" />
+					<input type="reset" value="Restablecer" />
+				</h:panelGrid> </header> </section>
+			</div>
+
+		</h:form>
+
+	</div>
+</h:body>
 </html>
