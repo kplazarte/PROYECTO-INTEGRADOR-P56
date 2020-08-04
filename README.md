@@ -16,7 +16,7 @@ Para instalar el proyecto, utilizaremos los comandos básicos de Git.
   ```
   y **listo!!** ya tendremos descargado el proyecto en nuestro disco C.
 ## 🛠️ Herramientas
-* Eclipse Jee
+* Neatbeans
 * PostgreSQL
 * Pentaho Community
 * Power Architect
