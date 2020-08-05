@@ -4,7 +4,9 @@ El proyecto integrador se podra crear usuarios y cambios de clave , existiran 3 
 Creará reportes con una base de datos multidimensional los reportes se  presentaran en una aplicacion web donde el usuario eligira un tipo de busqueda
 para crear el reporte.
 El proyecto estará bajo una licencia de software libre y el código será subido a esta plataforma periodicamente.
-![](https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56/blob/master/imagenes/p1.png)
+
+
+![](https://github.com/kplazarte/PROYECTO-INTEGRADOR-P56/blob/master/imagenes/1.png)
 ## 🔧 Descarga
 Para instalar el proyecto, utilizaremos los comandos básicos de Git.
 
